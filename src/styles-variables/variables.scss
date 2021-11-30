@@ -1,0 +1,14 @@
+$pos: center; //DOESN'T MAKE IT AS INITIAL ARGUMENT
+
+$white: #fff;
+$redBG: #880A0A;
+
+@mixin flexContent($pos) {
+    display: flex;
+    justify-content: $pos;
+    align-items: center;
+}
+
+// @mixin brandLogo{
+//     background: url(process.env.PUBLIC_URL + "public/assets/brand_nike_icon_157863.svg");
+// }
