@@ -9,7 +9,7 @@ const NavBar = () => {
             </div>
             <ul>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <li>home</li>
+                    <li className="active">home</li>
                 </a>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                     <li>collections</li>

@@ -1,8 +1,28 @@
+//FONTS
+@font-face{
+    font-family: FuturaExBold;
+    src: url(../assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: FuturaExBoldItalic;
+    src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: FuturaExLight;
+    src: url(../assets/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: FuturaExLightItalic;
+    src: url(../assets/fonts/Poppins-ExtraLightItalic.ttf);
+}
+
+//VARIABLES
 $pos: center; //DOESN'T MAKE IT AS INITIAL ARGUMENT
 
 $white: #fff;
 $redBG: #880A0A;
 
+//MIXINS
 @mixin flexContent($pos) {
     display: flex;
     justify-content: $pos;

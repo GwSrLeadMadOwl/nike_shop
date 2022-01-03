@@ -6,7 +6,7 @@ const Content = () => {
         <main>
             <div className="bg-logo" />
             <h1>home</h1>
-            <div id="line1" />
+            <div id="line1"><h1>home</h1></div>
             <div id="line2" />
         </main>
     );

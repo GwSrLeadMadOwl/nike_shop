@@ -6,6 +6,7 @@ main{
     margin-top: 9vh;
     background-color: $redBG;
     text-transform: uppercase;
+    position: relative;
     overflow: hidden;
     box-shadow:  0 0 0 -6px black;
     img{
@@ -29,41 +30,49 @@ main{
     }
     h1{
         font-size: 18em;
-        margin-left: 7vw;
-        position: relative;
-        // opacity: 0.8;
-        &::after{
-            content: "HOME";
-            color: $white;
-            position: absolute;
-            left: 0;
-            z-index: 2;
-            clip-path: polygon(49.9% 0%, 85.4% 0%, 70.9% 100%, 35% 100%);
-            opacity: 1000;
-            // mask-image: element(.line1);
-        }
+        // margin-left: 7vw;
+        left: 10rem;
+        position: absolute;
+        opacity: 0.8;
+        font-family: FuturaExBoldItalic;
     }
     #line1{
         width: 300px;
         height: 100vh;
         transform: skew(-20deg);
-        background-color: #A70C0C;
-        opacity: 0.8;
+        background-color: rgba(167, 12, 12, 0.8);
         position: absolute;
+        overflow: hidden;
         top:0;
-        left: 20vw;
+        // left: 20vw;
+        left: 25.7rem;
         z-index: 1;
+        h1{
+            // content: "HOME";
+            color: $white;
+            position: absolute;
+            // left: -18.2em;
+            left: -1.24em;
+            font-size: 18em;
+            font-family: FuturaExBoldItalic;
+            z-index: 2;
+            transform: skew(20deg);
+            // clip-path: polygon(49.9% 0%, 85.4% 0%, 70.9% 100%, 35% 100%);
+            // opacity: 1000;
+            // mask-image: element(.line1);
+        }
     }
     #line2{
         position: absolute;
         bottom: 0;
         right: 0;
         width: 200px;
-        height: 50vh;
+        height: 60vh;
         background-color: #A70C0C;
         // clip-path: polygon(100% 0, 100% 100%, 0 100%);
         border-left: solid 15px $white;
-        transform: rotateZ(25deg);
+        transform: rotateZ(20deg);
         transform-origin: left bottom;
+        z-index: 2;
     }
 }
